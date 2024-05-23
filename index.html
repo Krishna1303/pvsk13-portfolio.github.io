@@ -31,6 +31,7 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:image" content="img/profile-pic.jpg" />
     <meta property="og:url" content="https://pvsk-portfolio.vercel.app/" />
     <meta property="og:title" content="Venkata Sai Krishna Padarthi - Portfolio" />
     <meta name="og:description"
@@ -42,6 +43,7 @@
     <!-- Twitter -->
     <!-- <meta property="twitter:card" content="summary_large_image" /> -->
     <meta property="twitter:url" content="https://pvsk-portfolio.vercel.app/" />
+    <meta property="twitter:image" content="img/profile-pic.jpg" />
     <meta property="twitter:title" content="Venkata Sai Krishna Padarthi - Portfolio" />
     <meta name="twitter:description"
         content="Venkata Sai Krishna Padarthi is a dynamic and results-driven software development professional with extensive experience in both web and mobile application development. He has a diverse skill set, including full-stack web development, Android app development, and expertise in various programming languages and frameworks.">
@@ -87,7 +89,7 @@
                         <a class="nav-link js-scroll" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="Krishna_Resume.pdf" target="_blank"
+                        <a class="nav-link js-scroll" href="Krishna_Resume_1.pdf" target="_blank"
                             download="true">Resume</a>
                     </li>
                 </ul>
@@ -205,13 +207,25 @@
                 <div class="col-md-4">
                     <div class="service-box">
                         <div class="service-ico">
+                            <span class="ico-circle"><i class="ion-code-working"></i></span>
+                        </div>
+                        <div class="service-content">
+                            <h2 class="s-title">Programming</h2>
+                            <p class="s-description text-center">
+                                C/C++, Java, Python, Javascript, Typescript, LaTeX
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-box">
+                        <div class="service-ico">
                             <span class="ico-circle"><i class="ion-laptop"></i></span>
                         </div>
                         <div class="service-content">
                             <h2 class="s-title">Web Development</h2>
                             <p class="s-description text-center">
-                                Proficient in HTML, CSS, JavaScript, ReactJS, and NodeJS. Experienced in building
-                                scalable and responsive web applications.
+                                HTML5, CSS3, BootStrap, JavaScript, ReactJS, NodeJS, VueJS, NextJS
                             </p>
                         </div>
                     </div>
@@ -224,22 +238,7 @@
                         <div class="service-content">
                             <h2 class="s-title">Database Management</h2>
                             <p class="s-description text-center">
-                                Skilled in working with MySQL, SQL, and MongoDB for efficient data handling and
-                                storage.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="ion-code-working"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Programming</h2>
-                            <p class="s-description text-center">
-                                Proficient in C/C++, Java, Python, and Typescript, with a strong foundation in data
-                                structures and algorithms.
+                                MySQL, SQL, MongoDB, DBMS, CRUD operations
                             </p>
                         </div>
                     </div>
@@ -252,8 +251,8 @@
                         <div class="service-content">
                             <h2 class="s-title">Android App Development</h2>
                             <p class="s-description text-center">
-                                Skilled in developing Android applications using Android Studio and Java/Kotlin,
-                                focusing on creating engaging user experiences.
+                                Android Studio, Java/Kotlin, MVVM and MVC architecture, APIs, Firebase, XML,
+                                Notifications, Navigation, SDK
                             </p>
                         </div>
                     </div>
@@ -266,8 +265,8 @@
                         <div class="service-content">
                             <h2 class="s-title">DevOps</h2>
                             <p class="s-description text-center">
-                                Experience in DevOps practices, including Jenkins, Docker, DockerHub, Kubernetes, and
-                                AWS.
+                                Jenkins, Docker, DockerHub, Kubernetes, Rancher, CI/CD Pipelines, AWS, Azure, Route 53,
+                                Load Balancers, Tomcat Web Server, Port forwarding
                             </p>
                         </div>
                     </div>
@@ -280,7 +279,8 @@
                         <div class="service-content">
                             <h2 class="s-title">Other Skills</h2>
                             <p class="s-description text-center">
-                                VS Code Extension Development, VOIP, SIP calls and setup, AWS, Server Configurations
+                                VS Code Extension Development, VOIP, SIP server, XMPP server, Server Configurations, SSL
+                                Configurations, NGINX, Git, GitHub, Figma, Canva
                             </p>
                         </div>
                     </div>
@@ -663,8 +663,8 @@
 
 
 
-    <!--/ Section Blog Star /-->
-    <!-- <section id="blog" class="blog-mf sect-pt4 route">
+    <!-- / Section Blog Star /-->
+    <section id="blog" class="blog-mf sect-pt4 route">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -680,7 +680,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col">
                     <div class="card card-blog">
                         <div class="card-img">
                             <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
@@ -712,7 +712,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col">
                     <div class="card card-blog">
                         <div class="card-img">
                             <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
@@ -744,7 +744,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col">
+                    <div class="card card-blog">
+                        <div class="card-img">
+                            <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-category-box">
+                                <div class="card-category">
+                                    <h6 class="category">Web Design</h6>
+                                </div>
+                            </div>
+                            <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                            <p class="card-description">
+                                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien
+                                massa, convallis
+                                a pellentesque nec,
+                                egestas non nisi.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <a href="#">
+                                    <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                                    <span class="author">Morgan Freeman</span>
+                                </a>
+                            </div>
+                            <div class="post-date">
+                                <span class="ion-ios-clock-outline"></span> 10 min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-blog">
+                        <div class="card-img">
+                            <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-category-box">
+                                <div class="card-category">
+                                    <h6 class="category">Web Design</h6>
+                                </div>
+                            </div>
+                            <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
+                            <p class="card-description">
+                                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien
+                                massa, convallis
+                                a pellentesque nec,
+                                egestas non nisi.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="post-author">
+                                <a href="#">
+                                    <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                                    <span class="author">Morgan Freeman</span>
+                                </a>
+                            </div>
+                            <div class="post-date">
+                                <span class="ion-ios-clock-outline"></span> 10 min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
                     <div class="card card-blog">
                         <div class="card-img">
                             <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
@@ -778,8 +842,8 @@
                 </div>
             </div>
         </div>
-    </section> -->
-    <!--/ Section Blog End /-->
+    </section>
+    <!-- / Section Blog End / -->
 
     <!--/ Section Contact-Footer Star /-->
     <section class="paralax-mf footer-paralax bg-image sect-mt4 route"
