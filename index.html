@@ -1,588 +1,861 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PVSK Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <meta property="og:type" content="website" />
-    <meta property="og:image:width" content="800">
-    <meta property="og:image:height" content="600">
-    <meta property="og:url" content="https://pvsk-portfolio.vercel.app/" />
-    <meta property="og:title" content="Venkata Sai Krishna Padarthi - Portfolio" />
-    <meta name="og:description"
-        content="Venkata Sai Krishna Padarthi is a dynamic and results-driven software development professional with extensive experience in both web and mobile application development. He has a diverse skill set, including full-stack web development, Android app development, and expertise in various programming languages and frameworks.">
-    <meta name="og:keywords"
-        content="Venkata Sai Krishna Padarthi, software development, web development, mobile application development, full-stack development, Android app development, programming languages, frameworks, leadership skills, team management, Python, Java, C/C++, JavaScript, ReactJS, NodeJS, MySQL, SQL, MongoDB, VS Code, Jupyter Notebook, Spyder Notebook, Android Studio, GitHub, server infrastructure, DevOps, user experience, responsive design">
-    <meta name="og:author" content="Venkata Sai Krishna Padarthi">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Twitter -->
-    <!-- <meta property="twitter:card" content="summary_large_image" /> -->
-    <meta property="twitter:url" content="https://pvsk-portfolio.vercel.app/" />
-    <meta property="twitter:image:width" content="800">
-    <meta property="twitter:image:height" content="600">
-    <meta property="twitter:title" content="Venkata Sai Krishna Padarthi - Portfolio" />
-    <meta name="twitter:description"
-        content="Venkata Sai Krishna Padarthi is a dynamic and results-driven software development professional with extensive experience in both web and mobile application development. He has a diverse skill set, including full-stack web development, Android app development, and expertise in various programming languages and frameworks.">
-    <meta name="twitter:keywords"
-        content="Venkata Sai Krishna Padarthi, software development, web development, mobile application development, full-stack development, Android app development, programming languages, frameworks, leadership skills, team management, Python, Java, C/C++, JavaScript, ReactJS, NodeJS, MySQL, SQL, MongoDB, VS Code, Jupyter Notebook, Spyder Notebook, Android Studio, GitHub, server infrastructure, DevOps, user experience, responsive design">
-    <meta name="twitter:author" content="Venkata Sai Krishna Padarthi">
+  <!-- Primary SEO -->
+  <title>Venkata Sai Krishna Padarthi | Software Engineer | Fairfax, VA</title>
+  <meta name="description" content="Software Engineer with 4+ years of experience building scalable backend systems, mobile apps, and full-stack products. Expert in Java, Spring Boot, Node.js, React, and MongoDB. Founder of SkyVerge Labs. Based in Fairfax, VA. Open to full-time opportunities.">
+  <meta name="keywords" content="Software Engineer, Data Engineer, Java Developer, Node.js Developer, AWS Glue, Spring Boot, React Developer, Backend Developer, Fairfax VA, Full Stack Developer, ETL Pipeline, Android Developer, PVSK, Venkata Sai Krishna Padarthi">
+  <meta name="author" content="Venkata Sai Krishna Padarthi">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="theme-color" content="#050508">
+  <link rel="canonical" href="https://pvsk-portfolio.vercel.app/">
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pvsk-portfolio.vercel.app/">
+  <meta property="og:title" content="Venkata Sai Krishna Padarthi | Software Engineer">
+  <meta property="og:description" content="Software Engineer with 4+ years building scalable backend systems, mobile apps, and full-stack products. Expert in Java, Node.js, Spring Boot, and React. Based in Fairfax, VA.">
+  <meta property="og:image" content="https://pvsk-portfolio.vercel.app/img/profile-pic.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="PVSK Portfolio">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://pvsk-portfolio.vercel.app/">
+  <meta name="twitter:title" content="Venkata Sai Krishna Padarthi | Software Engineer">
+  <meta name="twitter:description" content="Software Engineer with 4+ years of experience. Expert in Java, Spring Boot, Node.js, and React. Founder of SkyVerge Labs.">
+  <meta name="twitter:image" content="https://pvsk-portfolio.vercel.app/img/profile-pic.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Venkata Sai Krishna Padarthi",
+    "alternateName": "PVSK",
+    "jobTitle": "Software Engineer",
+    "email": "pvsk03@gmail.com",
+    "telephone": "+15715648753",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Fairfax",
+      "addressRegion": "VA",
+      "addressCountry": "US"
+    },
+    "url": "https://pvsk-portfolio.vercel.app/",
+    "image": "https://pvsk-portfolio.vercel.app/img/profile-pic.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/venkata-sai-krishna-padarthi-4067311a7/",
+      "https://github.com/Krishna1303",
+      "https://medium.com/@pvsaikrishna13"
+    ],
+    "knowsAbout": [
+      "Java", "Spring Boot", "Node.js", "React", "AWS Glue", "Data Engineering",
+      "ETL Pipelines", "MongoDB", "Python", "Android Development", "TypeScript"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "RS Technologies Inc."
+    },
+    "alumniOf": [
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "George Mason University",
+        "address": { "@type": "PostalAddress", "addressLocality": "Fairfax", "addressRegion": "VA", "addressCountry": "US" }
+      },
+      {
+        "@type": "CollegeOrUniversity",
+        "name": "Guru Nanak Institute of Technology",
+        "address": { "@type": "PostalAddress", "addressLocality": "Hyderabad", "addressCountry": "IN" }
+      }
+    ]
+  }
+  </script>
 </head>
-
 <body>
-    <!-- Particle Background -->
-    <div id="particles"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">Portfolio</span>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
-                <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home" class="section hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="line">Hello, I'm</span>
-                    <span class="line highlight">Venkata Sai Krishna Padarthi</span>
-                    <span class="line">Software Developer</span>
-                </h1>
-                <p class="hero-description">
-                    I
-                    Passionate about creating innovative solutions through code.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-card">
-                    <div class="card-content">
-                        <i class="fas fa-code"></i>
-                        <span>Clean Code</span>
-                    </div>
-                </div>
-                <div class="floating-card delay-1">
-                    <div class="card-content">
-                        <i class="fas fa-palette"></i>
-                        <span>Creative Design</span>
-                    </div>
-                </div>
-                <div class="floating-card delay-2">
-                    <div class="card-content">
-                        <i class="fas fa-rocket"></i>
-                        <span>Fast Performance</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-mouse"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                    <ul>
-                        <li>
-                            I’m a Software Engineer and Data Engineer with experience across backend development,
-                            Android applications, and cloud-based data systems.
-                        </li>
-                        <li>
-                            I’ve worked on real-world systems ranging from mobile applications to scalable backend
-                            services and ETL pipelines, focusing on solving business problems through technology.
-                        </li>
-                        <li>
-                            Currently, I’m building products at SkyVerge Labs, where I’m working on automation tools and
-                            inventory systems.
-                        </li>
-                        <li>
-                            What I focus on:
-                            <br>
-                            Backend Engineering (Java, Spring Boot, Node.js)
-                            <br>
-                            Data Engineering (ETL pipelines, AWS Glue)
-                            <br>
-                            System Design & Scalable Architectures
-
-                        </li>
-                    </ul>
-                    </p>
-                    <br>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number" data-target="50">10</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number" data-target="3">4</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Vue.js</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">CSS3</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">GraphQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">SpringBoot</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skills-list">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">XML</span>
-                        <span class="skill-tag">Android App Development</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Kitchen Stock — Inventory Management System</h3>
-                        <p>A system designed to manage inventory, raw materials, and cost calculations for businesses.
-                            SKU-based architecture with multi-level dependencies (BOM system).
-                            Dynamic unit conversion (oz, kg, packs, gallons).
-                            Cost calculation engine for raw materials and products.
-                            Inventory tracking and consumption management.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node JS</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Express JS</span>
-                            <span class="tech-tag">React JS</span>
-                            <span class="tech-tag">React Native</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://www.spaarksweb.com/" class="project-link"><i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Spaarks App</h3>
-                        <p> Led a cross-functional team to deliver scalable ReactJS solutions, enhancing user experience
-                            and uptime through frontend optimization and DevOps practices.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://github.com/Krishna1303/Big-Mart-Sales" class="project-link"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Big Mart Sales Prediction</h3>
-                        <p>Developed a sales prediction model for a retail client using machine learning techniques,
-                            resulting in a 15% increase in forecast accuracy.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">ML</span>
-                            <span class="tech-tag">Sales Prediction</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="project-overlay">
-                            <a href="https://marketplace.visualstudio.com/items?itemName=PVSK.nodejs-api-documentation"
-                                class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="https://github.com/Krishna1303/nodejs-api-documentation" class="project-link"><i
-                                    class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>API Documentation</h3>
-                        <p> The documentation includes detailed descriptions of each endpoint, request and response
-                            examples, and interactive testing capabilities, all within the familiar VS Code environment.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Typescript</span>
-                            <span class="tech-tag">VS code</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work" class="section">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Data Engineer</h3>
-                        <p class="company">RS Technologies Inc.</p>
-                        <p class="duration">March 2026 - Present</p>
-                        <p class="description">
-                        <ul>
-                            <li>
-                                Designed and implemented scalable ETL pipelines, automating end-to-end data ingestion
-                                and transformation workflows, using AWS Glue, Python, and SQL for large-scale datasets
-                            </li>
-                            <li>
-                                Optimized data processing logic, reducing pipeline latency and improving execution
-                                efficiency, by refining transformation steps and query performance
-                            </li>
-                            <li>
-                                Debugged and resolved complex production data issues, ensuring high data accuracy and
-                                consistency, across distributed data pipelines
-                            </li>
-                            <li>
-                                Enhanced data reliability and availability, enabling data-driven decision-making across
-                                teams, through robust pipeline monitoring and validation checks
-                            </li>
-                            <li>
-                                Collaborated with cross-functional stakeholders, translating business requirements into
-                                scalable data solutions, within cloud-based architectures
-                            </li>
-                            <li>
-                                Standardized data transformation processes, improving maintainability and reducing
-                                future development effort, using modular pipeline design principles
-                            </li>
-
-                        </ul>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Software Developer</h3>
-                        <p class="company">I Giants Inc</p>
-                        <p class="duration">July 2024 - Jan 2026</p>
-                        <p class="description">
-                        <ul>
-                            <li>
-                                Developed scalable backend services and REST APIs, improving system reliability and
-                                handling increasing user load, using Node.js and Express.js </li>
-                            <li>
-                                Optimized API endpoints and database queries, reducing response time and improving
-                                application performance, through efficient data handling strategies </li>
-                            <li>
-                                Designed and implemented database schemas, ensuring efficient storage and retrieval for
-                                high-volume transactions, using MongoDB </li>
-                            <li>
-                                Built modular backend components, accelerating feature development and deployment
-                                cycles, in a full-stack development environment
-                            </li>
-                            <li>
-                                Collaborated with frontend and product teams, delivering user-centric features and
-                                improving overall system usability, using modern web technologies
-                            </li>
-                            <li>
-                                Maintained and enhanced existing systems, improving code quality and application
-                                stability, through debugging and refactoring
-                            </li>
-                        </ul>
-
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Team Lead (Android & Backend)</h3>
-                        <p class="company">OSOS Pvt Ltd</p>
-                        <p class="duration">August 2021 - Jan 2023</p>
-                        <p class="description">
-                        <ul>
-                            <li>
-                                Led and delivered Android application development, building scalable and user-friendly
-                                mobile solutions, using Java and Android SDK
-                            </li>
-                            <li>
-                                Integrated backend services and APIs, ensuring seamless communication between mobile
-                                applications and server-side systems, using Node.js
-                            <li>
-                                Implemented Google Play Services features, enhancing application functionality and user
-                                engagement, including authentication and push notifications
-                            </li>
-                            <li>
-                                Contributed to scaling platform growth from 1K to 500K+ users, improving product
-                                adoption and system performance, through backend and feature enhancements
-                            </li>
-                            <li>
-                                Managed a development team, ensuring efficient task execution and timely delivery of
-                                features, across multiple modules
-                            </li>
-                            <li>
-                                Optimized application performance, improving responsiveness and stability, through
-                                efficient data handling and system improvements
-                            </li>
-                            <li>
-                                Collaborated with cross-functional teams, aligning technical implementation with
-                                business requirements, for product success
-                            </li>
-                        </ul>
-
-                        </p>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Founder (Early-Stage SaaS Project)</h3>
-                        <p class="company">SkyVerge Labs Co.</p>
-                        <p class="duration">Sep 2025 - Present</p>
-                        <p class="description">
-                        <ul>
-                            <li>
-                                Founded and developed a SaaS-focused platform, building scalable software solutions for
-                                business automation, targeting real-world operational challenges
-                            </li>
-                            <li>
-                                Led end-to-end product development lifecycle, from ideation to system design and
-                                deployment, using modern full-stack technologies
-                            </li>
-                            <li>
-                                Designed backend architecture and data models, ensuring scalability, modularity, and
-                                maintainability, for long-term product growth
-                            </li>
-                            <li>
-                                Built core application features, enabling inventory tracking and cost optimization,
-                                through efficient backend systems
-                            </li>
-                            <li>
-                                Applied data-driven approaches, exploring predictive analytics and automation features,
-                                for enhanced business insights
-                            </li>
-                            <li>
-                                Managed product roadmap and development priorities, aligning technical solutions with
-                                business needs, in a startup environment
-                            </li>
-                        </ul>
-
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Junior Developer</h3>
-                        <p class="company">Startup Studio</p>
-                        <p class="duration">2019 - 2020</p>
-                        <p class="description">Contributed to multiple startup projects, focusing on frontend development and user experience optimization.</p>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-        <div class="container">
-            <h2 class="section-title">Latest Blog Posts</h2>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">June 14, 2024</span>
-                        <span class="blog-category">VOIP</span>
-                    </div>
-                    <h3>Demystifying VoIP and SIP: My Deep Dive into Internet Telephony</h3>
-                    <p>A clear exploration of how VoIP and SIP work together—highlighting SIP’s role in session
-                        management and VoIP’s role in transmitting voice over IP networks. </p>
-                    <a href="https://medium.com/@pvsaikrishna13/demystifying-voip-and-sip-my-deep-dive-into-internet-telephony-e88eb40ed86d"
-                        class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">June 13, 2024</span>
-                        <span class="blog-category">DevOps</span>
-                    </div>
-                    <h3>Load Balancer using NGINX</h3>
-                    <p>A practical guide on configuring NGINX as a high-performance load balancer, covering setup,
-                        health checks, SSL termination, and traffic distribution.
-                    </p>
-                    <a href="https://medium.com/@pvsaikrishna13/load-balancer-using-nginx-7407b269d71f"
-                        class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-                </article>
-
-                <article class="blog-card">
-                    <div class="blog-meta">
-                        <span class="blog-date">June 13, 2024</span>
-                        <span class="blog-category">DevOps</span>
-                    </div>
-                    <h3>Running Tomcat Application with Rancher and Jenkins</h3>
-                    <p>A step-by-step walkthrough for deploying a Tomcat-based Java app using Docker, Rancher, and
-                        Jenkins to streamline builds, containerization, and automated deployments.
-                    </p>
-                    <a href="https://medium.com/@pvsaikrishna13/running-tomcat-application-with-rancher-and-jenkins-08f2f95a594d"
-                        class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Let's Work Together</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Get In Touch</h3>
-                    <p>I'm always interested in hearing about new projects and opportunities. Let's create something
-                        amazing together!</p>
-
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>pvsk03@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+1 (571) 564-8753</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Fairfax, VA</span>
-                    </div>
-
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/venkata-sai-krishna-padarthi-4067311a7/"
-                            class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/Krishna1303" class="social-link"><i class="fab fa-github"></i></a>
-                        <!-- <a href="https://twitter.com/krish13032000" class="social-link"><i
-                                class="fab fa-twitter"></i></a> -->
-                    </div>
-                </div>
-
-                <!-- <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" required>
-                        <label for="name">Your Name</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" required>
-                        <label for="email">Your Email</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" required>
-                        <label for="subject">Subject</label>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" required></textarea>
-                        <label for="message">Your Message</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form> -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Download Button -->
-    <div class="resume-btn">
-        <a href="Krishna Resume.pdf" class="btn btn-resume" download>
-            <i class="fas fa-download"></i>
-            Resume
-        </a>
+  <!-- Page Loader -->
+  <div id="page-loader" class="page-loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-logo">PVSK</div>
+      <div class="loader-bar"><div class="loader-progress" id="loader-progress"></div></div>
+      <div class="loader-text">Initializing...</div>
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" aria-label="Go to top">
+        <span class="logo-text">PVSK</span><span class="logo-dot" aria-hidden="true"></span>
+      </a>
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#home"       class="nav-link active" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about"      class="nav-link"        role="menuitem">About</a></li>
+        <li role="none"><a href="#skills"     class="nav-link"        role="menuitem">Skills</a></li>
+        <li role="none"><a href="#experience" class="nav-link"        role="menuitem">Experience</a></li>
+        <li role="none"><a href="#education"  class="nav-link"        role="menuitem">Education</a></li>
+        <li role="none"><a href="#projects"   class="nav-link"        role="menuitem">Projects</a></li>
+        <li role="none"><a href="#blog"       class="nav-link"        role="menuitem">Blog</a></li>
+        <li role="none"><a href="#contact"    class="nav-link"        role="menuitem">Contact</a></li>
+        <li role="none">
+          <a href="Krishna Resume.pdf" download class="nav-resume-btn" role="menuitem">
+            <i class="fas fa-download" aria-hidden="true"></i> Resume
+          </a>
+        </li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge reveal-down">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            Available for new opportunities
+          </div>
+          <h1 class="hero-title reveal-up" style="--d:0.1s">
+            <span class="hero-greeting">Hi, I'm</span>
+            <span class="hero-name">Venkata Sai<br>Krishna Padarthi</span>
+          </h1>
+          <div class="hero-role reveal-up" style="--d:0.2s" aria-label="I build scalable backend systems and data pipelines">
+            <span class="role-prefix">I build </span>
+            <span class="typed-container">
+              <span id="typed-text" class="typed-text" aria-hidden="true"></span>
+              <span class="typed-cursor" aria-hidden="true">|</span>
+            </span>
+          </div>
+          <p class="hero-desc reveal-up" style="--d:0.3s">
+            Software Engineer crafting scalable backend systems, full-stack products,
+            and mobile applications — and building new ideas through SkyVerge Labs outside the 9-to-5.
+          </p>
+          <div class="hero-meta reveal-up" style="--d:0.35s">
+            <span class="hmeta-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Fairfax, VA</span>
+            <span class="hmeta-sep" aria-hidden="true">·</span>
+            <a href="https://www.linkedin.com/in/venkata-sai-krishna-padarthi-4067311a7/" target="_blank" rel="noopener" class="hmeta-link">
+              <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+            <span class="hmeta-sep" aria-hidden="true">·</span>
+            <a href="https://github.com/Krishna1303" target="_blank" rel="noopener" class="hmeta-link">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+          <div class="hero-actions reveal-up" style="--d:0.4s">
+            <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="Krishna Resume.pdf" download class="btn btn-outline"><i class="fas fa-download" aria-hidden="true"></i> Download Resume</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal-up" style="--d:0.45s" aria-hidden="true">
+          <div class="code-card">
+            <div class="code-card-bar">
+              <span class="ccb-dot ccb-red"></span>
+              <span class="ccb-dot ccb-yellow"></span>
+              <span class="ccb-dot ccb-green"></span>
+            </div>
+            <pre class="code-body"><span class="c-kw">const</span> <span class="c-var">engineer</span> = {
+  <span class="c-prop">name</span>:    <span class="c-str">"PVSK"</span>,
+  <span class="c-prop">role</span>:    <span class="c-str">"Software Engineer"</span>,
+  <span class="c-prop">years</span>:   <span class="c-num">4</span>,
+  <span class="c-prop">stack</span>:   [<span class="c-str">"Java"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"React"</span>],
+  <span class="c-prop">founder</span>: <span class="c-kw">true</span>,
+  <span class="c-prop">open</span>:    <span class="c-kw">true</span>
+};</pre>
+          </div>
+          <div class="float-chip float-chip--1"><i class="fas fa-server"></i> Backend Systems</div>
+          <div class="float-chip float-chip--2"><i class="fas fa-cloud"></i> AWS · ETL</div>
+          <div class="float-chip float-chip--3"><i class="fas fa-mobile-alt"></i> Mobile · 500K+</div>
+        </div>
+      </div>
+      <div class="hero-stats-bar reveal-up" style="--d:0.55s" aria-label="Career highlights">
+        <div class="hstat"><div class="hstat-num" data-count="4">0<span>+</span></div><div class="hstat-label">Years Experience</div></div>
+        <div class="hstat-sep" aria-hidden="true"></div>
+        <div class="hstat"><div class="hstat-num" data-count="10">0<span>+</span></div><div class="hstat-label">Projects Shipped</div></div>
+        <div class="hstat-sep" aria-hidden="true"></div>
+        <div class="hstat"><div class="hstat-num" data-count="500">0<span>K+</span></div><div class="hstat-label">Users Reached</div></div>
+        <div class="hstat-sep" aria-hidden="true"></div>
+        <div class="hstat"><div class="hstat-num" data-count="15">0<span>%</span></div><div class="hstat-label">ML Accuracy Gain</div></div>
+      </div>
+      <a href="#about" class="hero-scroll-cue" aria-label="Scroll to About">
+        <div class="scroll-mouse" aria-hidden="true"><div class="scroll-wheel"></div></div>
+        <span>Scroll</span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="about section" aria-label="About Me">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">About Me</span>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Turning Ideas Into <span class="g-text">Impact</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-img-col reveal-right">
+            <div class="about-img-wrap">
+              <div class="about-img-glow" aria-hidden="true"></div>
+              <img src="img/profile-pic.jpg"
+                   alt="Venkata Sai Krishna Padarthi — Software Engineer and Founder based in Fairfax, VA"
+                   class="about-img" loading="lazy" width="400" height="400">
+              <div class="about-img-ring" aria-hidden="true"></div>
+            </div>
+            <div class="about-pills">
+              <a href="mailto:pvsk03@gmail.com"   class="apill"><i class="fas fa-envelope" aria-hidden="true"></i> pvsk03@gmail.com</a>
+              <a href="tel:+15715648753"           class="apill"><i class="fas fa-phone"   aria-hidden="true"></i> +1 (571) 564-8753</a>
+              <span                                class="apill apill--static"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Fairfax, VA</span>
+            </div>
+          </div>
+          <div class="about-text-col reveal-left">
+            <div class="current-role-chip">
+              <span class="crole-dot" aria-hidden="true"></span>
+              Currently: Software Engineer &amp; Founder · RS Technologies + SkyVerge Labs
+            </div>
+            <h3 class="about-heading">Software Engineer &amp; Builder</h3>
+            <p class="about-p">
+              I'm a software engineer with <strong>4+ years of hands-on experience</strong> building
+              backend services, full-stack products, and mobile applications. I was <strong>promoted
+              to Team Lead</strong> within my first year at OSOS, where I grew an Android app from
+              1K to <strong>500K+ users in under 18 months</strong>. Since then I've shipped production
+              REST APIs, data pipelines, and end-to-end web products.
+            </p>
+            <p class="about-p">
+              Outside my day job, I run <strong>SkyVerge Labs</strong> — a software company where I
+              independently build and ship multiple apps and products across domains. It's where I own
+              every decision, from system design to deployment, and ship without waiting for anyone.
+            </p>
+            <div class="about-pillars">
+              <div class="pillar">
+                <div class="pillar-icon" aria-hidden="true"><i class="fas fa-server"></i></div>
+                <div class="pillar-body">
+                  <h4>Backend Engineering</h4>
+                  <p>Java · Spring Boot · Node.js · REST APIs</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <div class="pillar-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></div>
+                <div class="pillar-body">
+                  <h4>Full-Stack Products</h4>
+                  <p>React · Node.js · MongoDB · REST APIs</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <div class="pillar-icon" aria-hidden="true"><i class="fas fa-mobile-alt"></i></div>
+                <div class="pillar-body">
+                  <h4>Mobile Development</h4>
+                  <p>Android SDK · Java · scaled to 500K+ users</p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-primary">Let's Talk <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section id="skills" class="skills section" aria-label="Skills and Technologies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">Technical Stack</span>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Skills &amp; <span class="g-text">Technologies</span></h2>
+          <p class="section-sub reveal-up" style="--d:0.15s">Production-tested tools I use to build real systems</p>
+        </div>
+        <div class="bento-grid">
+
+          <!-- Backend — large card -->
+          <div class="bcard bcard--backend bcard--lg reveal-scale" style="--d:0.05s">
+            <div class="bcard-glow" aria-hidden="true"></div>
+            <div class="bcard-head">
+              <div class="bcard-icon" aria-hidden="true"><i class="fas fa-server"></i></div>
+              <div>
+                <h3>Backend Engineering</h3>
+                <span class="slevel slevel--expert">Expert</span>
+              </div>
+            </div>
+            <div class="stags">
+              <span class="stag stag--hot">Java</span>
+              <span class="stag stag--hot">Spring Boot</span>
+              <span class="stag">Node.js</span>
+              <span class="stag">Express.js</span>
+              <span class="stag">REST APIs</span>
+              <span class="stag">GraphQL</span>
+              <span class="stag">Microservices</span>
+            </div>
+            <div class="sbars">
+              <div class="sbar-row">
+                <span class="sbar-label">Java / Spring Boot</span>
+                <div class="sbar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="90% proficiency">
+                  <div class="sbar-fill" data-w="90"><span class="sbar-pct">90%</span></div>
+                </div>
+              </div>
+              <div class="sbar-row">
+                <span class="sbar-label">Node.js / Express</span>
+                <div class="sbar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="88% proficiency">
+                  <div class="sbar-fill" data-w="88"><span class="sbar-pct">88%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data & Cloud -->
+          <div class="bcard bcard--cloud bcard--lg reveal-scale" style="--d:0.1s">
+            <div class="bcard-glow" aria-hidden="true"></div>
+            <div class="bcard-head">
+              <div class="bcard-icon" aria-hidden="true"><i class="fas fa-cloud"></i></div>
+              <div>
+                <h3>Cloud &amp; Data</h3>
+                <span class="slevel slevel--advanced">Proficient</span>
+              </div>
+            </div>
+            <div class="stags">
+              <span class="stag stag--hot">AWS Glue</span>
+              <span class="stag stag--hot">Python</span>
+              <span class="stag">ETL Pipelines</span>
+              <span class="stag">SQL</span>
+              <span class="stag">AWS S3</span>
+              <span class="stag">Docker</span>
+              <span class="stag">Firebase</span>
+            </div>
+            <div class="sbars">
+              <div class="sbar-row">
+                <span class="sbar-label">AWS / Cloud</span>
+                <div class="sbar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="85% proficiency">
+                  <div class="sbar-fill" data-w="85"><span class="sbar-pct">85%</span></div>
+                </div>
+              </div>
+              <div class="sbar-row">
+                <span class="sbar-label">Python / Data</span>
+                <div class="sbar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="82% proficiency">
+                  <div class="sbar-fill" data-w="82"><span class="sbar-pct">82%</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div class="bcard bcard--db reveal-scale" style="--d:0.15s">
+            <div class="bcard-head">
+              <div class="bcard-icon" aria-hidden="true"><i class="fas fa-database"></i></div>
+              <h3>Databases</h3>
+            </div>
+            <div class="stags">
+              <span class="stag stag--hot">MongoDB</span>
+              <span class="stag">PostgreSQL</span>
+              <span class="stag">MySQL</span>
+              <span class="stag">Redis</span>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="bcard bcard--frontend reveal-scale" style="--d:0.2s">
+            <div class="bcard-head">
+              <div class="bcard-icon" aria-hidden="true"><i class="fas fa-laptop-code"></i></div>
+              <div>
+                <h3>Frontend</h3>
+                <span class="slevel">Proficient</span>
+              </div>
+            </div>
+            <div class="stags">
+              <span class="stag stag--hot">React</span>
+              <span class="stag">TypeScript</span>
+              <span class="stag">Vue.js</span>
+              <span class="stag">JavaScript</span>
+              <span class="stag">CSS3</span>
+            </div>
+          </div>
+
+          <!-- Mobile -->
+          <div class="bcard bcard--mobile reveal-scale" style="--d:0.25s">
+            <div class="bcard-head">
+              <div class="bcard-icon" aria-hidden="true"><i class="fas fa-mobile-alt"></i></div>
+              <h3>Mobile</h3>
+            </div>
+            <div class="stags">
+              <span class="stag stag--hot">Android</span>
+              <span class="stag">Java SDK</span>
+              <span class="stag">React Native</span>
+              <span class="stag">Google Play</span>
+            </div>
+            <div class="bcard-impact"><i class="fas fa-users" aria-hidden="true"></i> Scaled to 500K+ users</div>
+          </div>
+
+          <!-- Tools -->
+          <div class="bcard bcard--tools reveal-scale" style="--d:0.3s">
+            <div class="bcard-head">
+              <div class="bcard-icon" aria-hidden="true"><i class="fas fa-tools"></i></div>
+              <h3>Tools &amp; DevOps</h3>
+            </div>
+            <div class="stags">
+              <span class="stag">Git</span>
+              <span class="stag">Docker</span>
+              <span class="stag">Linux</span>
+              <span class="stag">Postman</span>
+              <span class="stag">VS Code</span>
+              <span class="stag">Figma</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE ==================== -->
+    <section id="experience" class="experience section" aria-label="Work Experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">Work History</span>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Professional <span class="g-text">Experience</span></h2>
+        </div>
+        <div class="timeline">
+
+          <article class="tl-item reveal-up" style="--d:0.05s">
+            <div class="tl-marker" aria-hidden="true"><div class="tl-dot tl-dot--active"></div><div class="tl-line"></div></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div class="tl-chips">
+                  <span class="tchip tchip--current">Current</span>
+                  <time class="tl-date" datetime="2026-03"><i class="far fa-calendar-alt" aria-hidden="true"></i> Mar 2026 – Present</time>
+                </div>
+                <h3 class="tl-role">Data Engineer</h3>
+                <div class="tl-company"><span class="co-name">RS Technologies Inc.</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Full-time</span></div>
+              </div>
+              <ul class="tl-bullets">
+                <li>Designed and deployed <strong>AWS Glue ETL pipelines in Python</strong> processing millions of records per run across production datasets with automated scheduling</li>
+                <li>Reduced pipeline execution time by <strong>~30%</strong> through query plan optimization, partition pruning, and schema redesign</li>
+                <li>Built end-to-end monitoring and automated validation framework that cut production debugging time significantly and improved data quality SLAs</li>
+                <li>Partnered with engineering and analytics teams to define data contracts, resolve schema drift, and maintain pipeline reliability at scale</li>
+              </ul>
+              <div class="tl-tech" aria-label="Technologies">
+                <span class="tpill">AWS Glue</span><span class="tpill">Python</span><span class="tpill">SQL</span>
+                <span class="tpill">ETL</span><span class="tpill">AWS S3</span><span class="tpill">Data Modeling</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item reveal-up" style="--d:0.1s">
+            <div class="tl-marker" aria-hidden="true"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div class="tl-chips">
+                  <span class="tchip tchip--founder">Founder</span>
+                  <time class="tl-date" datetime="2025-09"><i class="far fa-calendar-alt" aria-hidden="true"></i> Sep 2025 – Present</time>
+                </div>
+                <h3 class="tl-role">Founder &amp; Lead Engineer</h3>
+                <div class="tl-company"><span class="co-name">SkyVerge Labs Co.</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Self-employed</span></div>
+              </div>
+              <ul class="tl-bullets">
+                <li>Founded a software company to independently ship <strong>multiple apps and products</strong> across domains — SaaS tools, mobile apps, and automation platforms — entirely outside my day job</li>
+                <li>Solo-built and launched <strong>Kitchen Stock</strong> (kitchenstock.co) from zero to production in under 3 months — full-stack React Native + React + Node.js + MongoDB supporting real-time inventory across 100+ SKUs and multi-level BOM dependencies</li>
+                <li>Own the full engineering lifecycle across every project: system design → API architecture → frontend → deployment → user iteration</li>
+                <li>Operate as a one-person engineering org: product decisions, infrastructure, and code — no hand-offs, no waiting</li>
+              </ul>
+              <div class="tl-tech" aria-label="Technologies">
+                <span class="tpill">Node.js</span><span class="tpill">React</span><span class="tpill">React Native</span>
+                <span class="tpill">MongoDB</span><span class="tpill">System Design</span><span class="tpill">Full-Stack</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item reveal-up" style="--d:0.15s">
+            <div class="tl-marker" aria-hidden="true"><div class="tl-dot"></div><div class="tl-line"></div></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div class="tl-chips">
+                  <time class="tl-date" datetime="2024-07"><i class="far fa-calendar-alt" aria-hidden="true"></i> Jul 2024 – Jan 2026</time>
+                </div>
+                <h3 class="tl-role">Software Developer</h3>
+                <div class="tl-company"><span class="co-name">I Giants Inc</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Full-time</span></div>
+              </div>
+              <ul class="tl-bullets">
+                <li>Built and owned <strong>20+ REST API endpoints</strong> in Node.js/Express.js powering core backend services for a production application with active users</li>
+                <li>Redesigned MongoDB schemas and added compound indexes, reducing average query response time by <strong>~35%</strong> on high-frequency reads</li>
+                <li>Shipped features across <strong>bi-weekly sprint cycles</strong> for 18 months with consistent on-time delivery and minimal regression</li>
+                <li>Conducted peer code reviews, introduced API documentation standards, and contributed to team engineering practices</li>
+              </ul>
+              <div class="tl-tech" aria-label="Technologies">
+                <span class="tpill">Node.js</span><span class="tpill">Express.js</span><span class="tpill">MongoDB</span>
+                <span class="tpill">REST APIs</span><span class="tpill">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="tl-item reveal-up" style="--d:0.2s">
+            <div class="tl-marker" aria-hidden="true"><div class="tl-dot"></div></div>
+            <div class="tl-card">
+              <div class="tl-top">
+                <div class="tl-chips">
+                  <span class="tchip tchip--impact">500K+ Users</span>
+                  <time class="tl-date" datetime="2021-08"><i class="far fa-calendar-alt" aria-hidden="true"></i> Aug 2021 – Jan 2023</time>
+                </div>
+                <h3 class="tl-role">Team Lead — Android &amp; Backend</h3>
+                <div class="tl-company"><span class="co-name">OSOS Pvt Ltd</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Full-time</span></div>
+              </div>
+              <ul class="tl-bullets">
+                <li>Led a team of <strong>5 engineers</strong> to grow the Android app from <strong>1K to 500K+ Play Store users</strong> in under 18 months — owning sprint planning, code reviews, and the technical roadmap</li>
+                <li>Architected mobile-backend communication layer in Node.js to handle <strong>concurrent requests at scale</strong>, integrating Google Play Services and 8+ third-party APIs</li>
+                <li>Reduced app crash rate through systematic code review culture and pre-release QA checklists, improving Play Store rating over the product lifecycle</li>
+                <li>Promoted from engineer to team lead within the first year based on delivery track record and technical ownership</li>
+              </ul>
+              <div class="tl-tech" aria-label="Technologies">
+                <span class="tpill">Java</span><span class="tpill">Android SDK</span><span class="tpill">Node.js</span>
+                <span class="tpill">Google Play</span><span class="tpill">Team Lead</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section id="education" class="education section" aria-label="Education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">Academic Background</span>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Education &amp; <span class="g-text">Degrees</span></h2>
+        </div>
+        <div class="edu-grid">
+
+          <div class="edu-card reveal-fade-up reveal-up" style="--d:0.1s">
+            <div class="edu-card-inner">
+              <div class="edu-icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+              <div class="edu-body">
+                <div class="edu-meta">
+                  <span class="edu-badge edu-badge--masters">Master's Degree</span>
+                  <span class="edu-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Jan 2023 – May 2024</span>
+                </div>
+                <h3 class="edu-degree">Master of Science in Computer Science</h3>
+                <div class="edu-school">
+                  <span class="edu-school-name">George Mason University</span>
+                  <span class="edu-school-loc"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Fairfax, VA, USA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card reveal-up" style="--d:0.15s">
+            <div class="edu-card-inner">
+              <div class="edu-icon edu-icon--bachelors" aria-hidden="true"><i class="fas fa-university"></i></div>
+              <div class="edu-body">
+                <div class="edu-meta">
+                  <span class="edu-badge edu-badge--bachelors">Bachelor's Degree</span>
+                  <span class="edu-date"><i class="far fa-calendar-alt" aria-hidden="true"></i> Aug 2018 – Aug 2022</span>
+                </div>
+                <h3 class="edu-degree">Bachelor of Technology in Computer Science</h3>
+                <div class="edu-school">
+                  <span class="edu-school-name">Guru Nanak Institute of Technology</span>
+                  <span class="edu-school-loc"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Hyderabad, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section id="projects" class="projects section" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">Portfolio</span>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Featured <span class="g-text">Projects</span></h2>
+          <p class="section-sub reveal-up" style="--d:0.15s">Real-world systems built with production-grade engineering</p>
+        </div>
+        <div class="projects-grid">
+
+          <div class="pcard pcard--featured reveal-up" style="--d:0.1s">
+            <div class="pcard-inner">
+              <div class="pcard-star"><i class="fas fa-star" aria-hidden="true"></i> Featured Project</div>
+              <div class="pcard-num" aria-hidden="true">01</div>
+              <h3 class="pcard-title">Kitchen Stock — Inventory Management System</h3>
+              <p class="pcard-desc">
+                Full-stack inventory management platform for restaurant and kitchen operations.
+                Features SKU-based architecture, multi-level Bill of Materials (BOM) dependencies,
+                dynamic unit conversion, real-time cost calculation, and comprehensive stock tracking.
+              </p>
+              <div class="pcard-checks">
+                <div class="pcheck"><i class="fas fa-check-circle" aria-hidden="true"></i> SKU-based architecture with BOM</div>
+                <div class="pcheck"><i class="fas fa-check-circle" aria-hidden="true"></i> Dynamic unit conversion engine</div>
+                <div class="pcheck"><i class="fas fa-check-circle" aria-hidden="true"></i> Real-time cost &amp; inventory tracking</div>
+              </div>
+              <div class="pcard-tech">
+                <span class="tpill">Node.js</span><span class="tpill">React</span><span class="tpill">React Native</span>
+                <span class="tpill">MongoDB</span><span class="tpill">Express.js</span>
+              </div>
+              <div class="pcard-links">
+                <a href="https://kitchenstock.co/" target="_blank" rel="noopener" class="plink">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Site
+                </a>
+                <a href="https://kitchenstock.co/features" target="_blank" rel="noopener" class="plink">
+                  <i class="fas fa-list-check" aria-hidden="true"></i> All Features
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pcard reveal-up" style="--d:0.15s">
+            <div class="pcard-inner">
+              <div class="pcard-num" aria-hidden="true">02</div>
+              <h3 class="pcard-title">Spaarks App</h3>
+              <p class="pcard-desc">
+                Scalable production web platform for a social app — built with ReactJS for a
+                cross-functional team. Delivered frontend performance optimizations and DevOps
+                pipeline integrations that improved release velocity and stability.
+              </p>
+              <div class="pcard-tech">
+                <span class="tpill">React</span><span class="tpill">Node.js</span><span class="tpill">MongoDB</span><span class="tpill">DevOps</span>
+              </div>
+              <div class="pcard-links">
+                <a href="https://www.spaarksweb.com/" target="_blank" rel="noopener" class="plink">
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Site
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pcard reveal-up" style="--d:0.2s">
+            <div class="pcard-inner">
+              <div class="pcard-num" aria-hidden="true">03</div>
+              <div class="pcard-metric"><span class="pmetric-val">15%</span><span class="pmetric-label">Accuracy Improvement</span></div>
+              <h3 class="pcard-title">Big Mart Sales Prediction</h3>
+              <p class="pcard-desc">
+                ML model achieving a <strong>15% improvement in forecast accuracy</strong> for
+                retail sales. Applied feature engineering, outlier removal, and ensemble model
+                tuning on the Big Mart dataset.
+              </p>
+              <div class="pcard-tech">
+                <span class="tpill">Python</span><span class="tpill">Scikit-learn</span><span class="tpill">Pandas</span><span class="tpill">ML</span>
+              </div>
+              <div class="pcard-links">
+                <a href="https://github.com/Krishna1303/Big-Mart-Sales" target="_blank" rel="noopener" class="plink">
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pcard reveal-up" style="--d:0.25s">
+            <div class="pcard-inner">
+              <div class="pcard-num" aria-hidden="true">04</div>
+              <div class="pcard-metric"><span class="pmetric-val"><i class="fas fa-puzzle-piece" style="font-size:1.1rem" aria-hidden="true"></i></span><span class="pmetric-label">VS Code Marketplace</span></div>
+              <h3 class="pcard-title">Node.js API Documentation Extension</h3>
+              <p class="pcard-desc">
+                VS Code extension for auto-generating API documentation for Node.js projects.
+                Written in TypeScript and published to the Visual Studio Marketplace — actively
+                used by developers worldwide.
+              </p>
+              <div class="pcard-tech">
+                <span class="tpill">TypeScript</span><span class="tpill">VS Code API</span><span class="tpill">Node.js</span>
+              </div>
+              <div class="pcard-links">
+                <a href="https://marketplace.visualstudio.com/items?itemName=PVSK.nodejs-api-documentation" target="_blank" rel="noopener" class="plink">
+                  <i class="fas fa-puzzle-piece" aria-hidden="true"></i> Marketplace
+                </a>
+                <a href="https://github.com/Krishna1303/nodejs-api-documentation" target="_blank" rel="noopener" class="plink">
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BLOG ==================== -->
+    <section id="blog" class="blog section" aria-label="Technical Blog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">Writing</span>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Technical <span class="g-text">Blog</span></h2>
+          <p class="section-sub reveal-up" style="--d:0.15s">Sharing what I learn about systems, infrastructure, and engineering</p>
+        </div>
+        <div class="blog-grid">
+
+          <article class="blog-card reveal-up" style="--d:0.1s">
+            <div class="blog-card-inner">
+              <div class="blog-meta"><span class="blog-tag">Networking</span></div>
+              <h3 class="blog-title">
+                <a href="https://medium.com/@pvsaikrishna13/demystifying-voip-and-sip-my-deep-dive-into-internet-telephony-e88eb40ed86d" target="_blank" rel="noopener">
+                  Demystifying VoIP and SIP: My Deep Dive into Internet Telephony
+                </a>
+              </h3>
+              <p class="blog-excerpt">A technical exploration of how VoIP protocols work under the hood — from SIP signaling to RTP media streams and codec negotiation.</p>
+              <a href="https://medium.com/@pvsaikrishna13/demystifying-voip-and-sip-my-deep-dive-into-internet-telephony-e88eb40ed86d" target="_blank" rel="noopener" class="blog-link">
+                Read on Medium <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" style="--d:0.15s">
+            <div class="blog-card-inner">
+              <div class="blog-meta"><span class="blog-tag">DevOps</span></div>
+              <h3 class="blog-title">
+                <a href="https://medium.com/@pvsaikrishna13/load-balancer-using-nginx-7407b269d71f" target="_blank" rel="noopener">
+                  Load Balancer using NGINX
+                </a>
+              </h3>
+              <p class="blog-excerpt">Hands-on walkthrough of configuring NGINX as a load balancer — upstream server groups, health checks, and load-balancing strategies.</p>
+              <a href="https://medium.com/@pvsaikrishna13/load-balancer-using-nginx-7407b269d71f" target="_blank" rel="noopener" class="blog-link">
+                Read on Medium <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="blog-card reveal-up" style="--d:0.2s">
+            <div class="blog-card-inner">
+              <div class="blog-meta"><span class="blog-tag">Infrastructure</span></div>
+              <h3 class="blog-title">
+                <a href="https://medium.com/@pvsaikrishna13/running-tomcat-application-with-rancher-and-jenkins-08f2f95a594d" target="_blank" rel="noopener">
+                  Running Tomcat Application with Rancher and Jenkins
+                </a>
+              </h3>
+              <p class="blog-excerpt">End-to-end guide to deploying a Java Tomcat application using Rancher container management and a Jenkins CI/CD pipeline.</p>
+              <a href="https://medium.com/@pvsaikrishna13/running-tomcat-application-with-rancher-and-jenkins-08f2f95a594d" target="_blank" rel="noopener" class="blog-link">
+                Read on Medium <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+        <div class="blog-footer-cta reveal-up" style="--d:0.25s">
+          <a href="https://medium.com/@pvsaikrishna13" target="_blank" rel="noopener" class="btn btn-outline">
+            View All Posts on Medium <i class="fab fa-medium" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="contact section" aria-label="Contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag reveal-up">Get In Touch</span>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Let's <span class="g-text">Connect</span></h2>
+          <p class="section-sub reveal-up" style="--d:0.15s">Open to full-time roles, contract work, and interesting collaborations</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info-col reveal-right">
+            <div class="cinfo-card">
+              <div class="avail-row"><span class="avail-dot" aria-hidden="true"></span>Available for opportunities</div>
+              <h3>Ready to build something great?</h3>
+              <p>Whether you have a role in mind, a project to discuss, or just want to connect — my inbox is always open.</p>
+              <div class="channels">
+                <a href="mailto:pvsk03@gmail.com" class="channel">
+                  <div class="ch-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+                  <div class="ch-body"><span class="ch-label">Email</span><span class="ch-val">pvsk03@gmail.com</span></div>
+                  <i class="fas fa-arrow-right ch-arr" aria-hidden="true"></i>
+                </a>
+                <a href="tel:+15715648753" class="channel">
+                  <div class="ch-icon" aria-hidden="true"><i class="fas fa-phone"></i></div>
+                  <div class="ch-body"><span class="ch-label">Phone</span><span class="ch-val">+1 (571) 564-8753</span></div>
+                  <i class="fas fa-arrow-right ch-arr" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/venkata-sai-krishna-padarthi-4067311a7/" target="_blank" rel="noopener" class="channel">
+                  <div class="ch-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></div>
+                  <div class="ch-body"><span class="ch-label">LinkedIn</span><span class="ch-val">venkata-sai-krishna-padarthi</span></div>
+                  <i class="fas fa-arrow-right ch-arr" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Krishna1303" target="_blank" rel="noopener" class="channel">
+                  <div class="ch-icon" aria-hidden="true"><i class="fab fa-github"></i></div>
+                  <div class="ch-body"><span class="ch-label">GitHub</span><span class="ch-val">Krishna1303</span></div>
+                  <i class="fas fa-arrow-right ch-arr" aria-hidden="true"></i>
+                </a>
+              </div>
+              <a href="Krishna Resume.pdf" download class="btn btn-primary btn--fw">
+                <i class="fas fa-download" aria-hidden="true"></i> Download Resume (PDF)
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-col reveal-left">
+            <form class="cform" id="contact-form" novalidate>
+              <div class="cform-row">
+                <div class="cform-group">
+                  <label for="c-name">Your Name</label>
+                  <input type="text" id="c-name" name="name" placeholder="Jane Smith" required autocomplete="name">
+                </div>
+                <div class="cform-group">
+                  <label for="c-email">Email Address</label>
+                  <input type="email" id="c-email" name="email" placeholder="jane@company.com" required autocomplete="email">
+                </div>
+              </div>
+              <div class="cform-group">
+                <label for="c-subject">Subject</label>
+                <input type="text" id="c-subject" name="subject" placeholder="Job opportunity / Collaboration">
+              </div>
+              <div class="cform-group">
+                <label for="c-message">Message</label>
+                <textarea id="c-message" name="message" rows="5" placeholder="Tell me about the role or project..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn--fw">
+                Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+              <div id="form-status" class="cform-status" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">PVSK</span>
+          <p class="footer-line">Venkata Sai Krishna Padarthi &nbsp;·&nbsp; Software Engineer &amp; Founder &nbsp;·&nbsp; Fairfax, VA</p>
+        </div>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.linkedin.com/in/venkata-sai-krishna-padarthi-4067311a7/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+          <a href="https://github.com/Krishna1303" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+          <a href="https://medium.com/@pvsaikrishna13" target="_blank" rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+          <a href="mailto:pvsk03@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+        </div>
+        <p class="footer-copy">&copy; 2025 Venkata Sai Krishna Padarthi. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Resume Button -->
+  <a href="Krishna Resume.pdf" download class="fab-resume" title="Download Resume" aria-label="Download Resume PDF">
+    <i class="fas fa-file-download" aria-hidden="true"></i>
+    <span>Resume</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="back-top" aria-label="Back to top" hidden>
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>
