@@ -6,8 +6,8 @@
 
   <!-- Primary SEO -->
   <title>Venkata Sai Krishna Padarthi | Software Engineer | Fairfax, VA</title>
-  <meta name="description" content="Software Engineer with 4+ years of experience building scalable backend systems, mobile apps, and full-stack products. Expert in Java, Spring Boot, Node.js, React, and MongoDB. Founder of SkyVerge Labs. Based in Fairfax, VA. Open to full-time opportunities.">
-  <meta name="keywords" content="Software Engineer, Data Engineer, Java Developer, Node.js Developer, AWS Glue, Spring Boot, React Developer, Backend Developer, Fairfax VA, Full Stack Developer, ETL Pipeline, Android Developer, PVSK, Venkata Sai Krishna Padarthi">
+  <meta name="description" content="Software Engineer with 4+ years of experience building scalable backend systems, mobile apps, and full-stack products. Expert in Java, Spring Boot, Node.js, React, and MongoDB. Based in Fairfax, VA. Open to full-time opportunities.">
+  <meta name="keywords" content="Software Engineer, Full Stack Developer, Java Developer, Node.js Developer, Spring Boot, React Developer, Backend Developer, Fairfax VA, Android Developer, SkyVerge Labs, PVSK, Venkata Sai Krishna Padarthi">
   <meta name="author" content="Venkata Sai Krishna Padarthi">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="theme-color" content="#050508">
@@ -28,23 +28,28 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://pvsk-portfolio.vercel.app/">
   <meta name="twitter:title" content="Venkata Sai Krishna Padarthi | Software Engineer">
-  <meta name="twitter:description" content="Software Engineer with 4+ years of experience. Expert in Java, Spring Boot, Node.js, and React. Founder of SkyVerge Labs.">
+  <meta name="twitter:description" content="Software Engineer with 4+ years of experience. Expert in Java, Spring Boot, Node.js, and React. Building backend systems and full-stack products.">
   <meta name="twitter:image" content="https://pvsk-portfolio.vercel.app/img/profile-pic.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
-  <!-- Google Fonts: Inter -->
+  <!-- Resource hints -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
 
-  <!-- Font Awesome 6 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- Main Stylesheet -->
+  <!-- Critical CSS first -->
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Fonts — trimmed weights, display=swap prevents FOIT -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome — non-render-blocking -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -70,8 +75,8 @@
       "https://medium.com/@pvsaikrishna13"
     ],
     "knowsAbout": [
-      "Java", "Spring Boot", "Node.js", "React", "AWS Glue", "Data Engineering",
-      "ETL Pipelines", "MongoDB", "Python", "Android Development", "TypeScript"
+      "Java", "Spring Boot", "Node.js", "React", "MongoDB",
+      "Python", "Android Development", "TypeScript", "REST APIs", "System Design"
     ],
     "worksFor": {
       "@type": "Organization",
@@ -146,7 +151,7 @@
             <span class="hero-greeting">Hi, I'm</span>
             <span class="hero-name">Venkata Sai<br>Krishna Padarthi</span>
           </h1>
-          <div class="hero-role reveal-up" style="--d:0.2s" aria-label="I build scalable backend systems and data pipelines">
+          <div class="hero-role reveal-up" style="--d:0.2s" aria-label="I build scalable backend systems and full-stack products">
             <span class="role-prefix">I build </span>
             <span class="typed-container">
               <span id="typed-text" class="typed-text" aria-hidden="true"></span>
@@ -154,8 +159,8 @@
             </span>
           </div>
           <p class="hero-desc reveal-up" style="--d:0.3s">
-            Software Engineer crafting scalable backend systems, full-stack products,
-            and mobile applications — and building new ideas through SkyVerge Labs outside the 9-to-5.
+            Software Engineer specialising in backend systems, full-stack products, and mobile applications.
+            4+ years shipping production software — currently at RS Technologies and building SkyVerge Labs on the side.
           </p>
           <div class="hero-meta reveal-up" style="--d:0.35s">
             <span class="hmeta-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Fairfax, VA</span>
@@ -185,13 +190,13 @@
   <span class="c-prop">role</span>:    <span class="c-str">"Software Engineer"</span>,
   <span class="c-prop">years</span>:   <span class="c-num">4</span>,
   <span class="c-prop">stack</span>:   [<span class="c-str">"Java"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"React"</span>],
-  <span class="c-prop">founder</span>: <span class="c-kw">true</span>,
+  <span class="c-prop">sideProjects</span>: <span class="c-kw">true</span>,
   <span class="c-prop">open</span>:    <span class="c-kw">true</span>
 };</pre>
           </div>
           <div class="float-chip float-chip--1"><i class="fas fa-server"></i> Backend Systems</div>
-          <div class="float-chip float-chip--2"><i class="fas fa-cloud"></i> AWS · ETL</div>
-          <div class="float-chip float-chip--3"><i class="fas fa-mobile-alt"></i> Mobile · 500K+</div>
+          <div class="float-chip float-chip--2"><i class="fas fa-cloud"></i> AWS · Python</div>
+          <div class="float-chip float-chip--3"><i class="fas fa-mobile-alt"></i> Mobile · 100K+</div>
         </div>
       </div>
       <div class="hero-stats-bar reveal-up" style="--d:0.55s" aria-label="Career highlights">
@@ -199,7 +204,7 @@
         <div class="hstat-sep" aria-hidden="true"></div>
         <div class="hstat"><div class="hstat-num" data-count="10">0<span>+</span></div><div class="hstat-label">Projects Shipped</div></div>
         <div class="hstat-sep" aria-hidden="true"></div>
-        <div class="hstat"><div class="hstat-num" data-count="500">0<span>K+</span></div><div class="hstat-label">Users Reached</div></div>
+        <div class="hstat"><div class="hstat-num" data-count="100">0<span>K+</span></div><div class="hstat-label">Play Store Downloads</div></div>
         <div class="hstat-sep" aria-hidden="true"></div>
         <div class="hstat"><div class="hstat-num" data-count="15">0<span>%</span></div><div class="hstat-label">ML Accuracy Gain</div></div>
       </div>
@@ -217,38 +222,28 @@
           <h2 class="section-title reveal-up" style="--d:0.1s">Turning Ideas Into <span class="g-text">Impact</span></h2>
         </div>
         <div class="about-grid">
-          <div class="about-img-col reveal-right">
-            <div class="about-img-wrap">
-              <div class="about-img-glow" aria-hidden="true"></div>
-              <img src="img/profile-pic.jpg"
-                   alt="Venkata Sai Krishna Padarthi — Software Engineer and Founder based in Fairfax, VA"
-                   class="about-img" loading="lazy" width="400" height="400">
-              <div class="about-img-ring" aria-hidden="true"></div>
+          <div class="about-text-col reveal-up">
+            <div class="current-role-chip">
+              <span class="crole-dot" aria-hidden="true"></span>
+              Currently: Software Engineer @ RS Technologies · Building SkyVerge Labs
             </div>
+            <h3 class="about-heading">Software Engineer &amp; Builder</h3>
+            <p class="about-p">
+              I'm a software engineer with 4+ years of hands-on experience building backend services,
+              full-stack products, and mobile applications. I was promoted to Team Lead within my first
+              year at OSOS, where I grew an Android app from 1K to 100K+ Play Store downloads in under 18 months.
+              Since then I've shipped production REST APIs, full-stack applications, and end-to-end web products.
+            </p>
+            <p class="about-p">
+              Outside my day job, I run SkyVerge Labs — a software company where I independently build
+              and ship multiple apps and products across domains. Owning every layer of the stack, from
+              system design to deployment, has made me a sharper and more complete engineer.
+            </p>
             <div class="about-pills">
               <a href="mailto:pvsk03@gmail.com"   class="apill"><i class="fas fa-envelope" aria-hidden="true"></i> pvsk03@gmail.com</a>
               <a href="tel:+15715648753"           class="apill"><i class="fas fa-phone"   aria-hidden="true"></i> +1 (571) 564-8753</a>
               <span                                class="apill apill--static"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Fairfax, VA</span>
             </div>
-          </div>
-          <div class="about-text-col reveal-left">
-            <div class="current-role-chip">
-              <span class="crole-dot" aria-hidden="true"></span>
-              Currently: Software Engineer &amp; Founder · RS Technologies + SkyVerge Labs
-            </div>
-            <h3 class="about-heading">Software Engineer &amp; Builder</h3>
-            <p class="about-p">
-              I'm a software engineer with <strong>4+ years of hands-on experience</strong> building
-              backend services, full-stack products, and mobile applications. I was <strong>promoted
-              to Team Lead</strong> within my first year at OSOS, where I grew an Android app from
-              1K to <strong>500K+ users in under 18 months</strong>. Since then I've shipped production
-              REST APIs, data pipelines, and end-to-end web products.
-            </p>
-            <p class="about-p">
-              Outside my day job, I run <strong>SkyVerge Labs</strong> — a software company where I
-              independently build and ship multiple apps and products across domains. It's where I own
-              every decision, from system design to deployment, and ship without waiting for anyone.
-            </p>
             <div class="about-pillars">
               <div class="pillar">
                 <div class="pillar-icon" aria-hidden="true"><i class="fas fa-server"></i></div>
@@ -268,7 +263,7 @@
                 <div class="pillar-icon" aria-hidden="true"><i class="fas fa-mobile-alt"></i></div>
                 <div class="pillar-body">
                   <h4>Mobile Development</h4>
-                  <p>Android SDK · Java · scaled to 500K+ users</p>
+                  <p>Android SDK · Java · 100K+ Play Store downloads</p>
                 </div>
               </div>
             </div>
@@ -301,60 +296,33 @@
             <div class="stags">
               <span class="stag stag--hot">Java</span>
               <span class="stag stag--hot">Spring Boot</span>
-              <span class="stag">Node.js</span>
+              <span class="stag stag--hot">Node.js</span>
               <span class="stag">Express.js</span>
+              <span class="stag">Python</span>
               <span class="stag">REST APIs</span>
               <span class="stag">GraphQL</span>
               <span class="stag">Microservices</span>
             </div>
-            <div class="sbars">
-              <div class="sbar-row">
-                <span class="sbar-label">Java / Spring Boot</span>
-                <div class="sbar-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="90% proficiency">
-                  <div class="sbar-fill" data-w="90"><span class="sbar-pct">90%</span></div>
-                </div>
-              </div>
-              <div class="sbar-row">
-                <span class="sbar-label">Node.js / Express</span>
-                <div class="sbar-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="88% proficiency">
-                  <div class="sbar-fill" data-w="88"><span class="sbar-pct">88%</span></div>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <!-- Data & Cloud -->
+          <!-- Cloud & Infra -->
           <div class="bcard bcard--cloud bcard--lg reveal-scale" style="--d:0.1s">
             <div class="bcard-glow" aria-hidden="true"></div>
             <div class="bcard-head">
               <div class="bcard-icon" aria-hidden="true"><i class="fas fa-cloud"></i></div>
               <div>
-                <h3>Cloud &amp; Data</h3>
+                <h3>Cloud &amp; Infra</h3>
                 <span class="slevel slevel--advanced">Proficient</span>
               </div>
             </div>
             <div class="stags">
-              <span class="stag stag--hot">AWS Glue</span>
-              <span class="stag stag--hot">Python</span>
-              <span class="stag">ETL Pipelines</span>
-              <span class="stag">SQL</span>
-              <span class="stag">AWS S3</span>
+              <span class="stag stag--hot">AWS</span>
               <span class="stag">Docker</span>
+              <span class="stag">NGINX</span>
               <span class="stag">Firebase</span>
-            </div>
-            <div class="sbars">
-              <div class="sbar-row">
-                <span class="sbar-label">AWS / Cloud</span>
-                <div class="sbar-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="85% proficiency">
-                  <div class="sbar-fill" data-w="85"><span class="sbar-pct">85%</span></div>
-                </div>
-              </div>
-              <div class="sbar-row">
-                <span class="sbar-label">Python / Data</span>
-                <div class="sbar-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="82% proficiency">
-                  <div class="sbar-fill" data-w="82"><span class="sbar-pct">82%</span></div>
-                </div>
-              </div>
+              <span class="stag">Linux</span>
+              <span class="stag">Bash</span>
+              <span class="stag">CI/CD</span>
             </div>
           </div>
 
@@ -369,6 +337,7 @@
               <span class="stag">PostgreSQL</span>
               <span class="stag">MySQL</span>
               <span class="stag">Redis</span>
+              <span class="stag">SQL</span>
             </div>
           </div>
 
@@ -384,8 +353,8 @@
             <div class="stags">
               <span class="stag stag--hot">React</span>
               <span class="stag">TypeScript</span>
-              <span class="stag">Vue.js</span>
               <span class="stag">JavaScript</span>
+              <span class="stag">HTML5</span>
               <span class="stag">CSS3</span>
             </div>
           </div>
@@ -397,27 +366,28 @@
               <h3>Mobile</h3>
             </div>
             <div class="stags">
-              <span class="stag stag--hot">Android</span>
-              <span class="stag">Java SDK</span>
-              <span class="stag">React Native</span>
+              <span class="stag stag--hot">Android SDK</span>
+              <span class="stag stag--hot">React Native</span>
+              <span class="stag">Java</span>
+              <span class="stag">Kotlin</span>
               <span class="stag">Google Play</span>
             </div>
-            <div class="bcard-impact"><i class="fas fa-users" aria-hidden="true"></i> Scaled to 500K+ users</div>
+            <div class="bcard-impact"><i class="fas fa-users" aria-hidden="true"></i> 100K+ Play Store downloads</div>
           </div>
 
           <!-- Tools -->
           <div class="bcard bcard--tools reveal-scale" style="--d:0.3s">
             <div class="bcard-head">
               <div class="bcard-icon" aria-hidden="true"><i class="fas fa-tools"></i></div>
-              <h3>Tools &amp; DevOps</h3>
+              <h3>Tools</h3>
             </div>
             <div class="stags">
               <span class="stag">Git</span>
-              <span class="stag">Docker</span>
-              <span class="stag">Linux</span>
               <span class="stag">Postman</span>
+              <span class="stag">IntelliJ</span>
               <span class="stag">VS Code</span>
               <span class="stag">Figma</span>
+              <span class="stag">Jira</span>
             </div>
           </div>
 
@@ -442,18 +412,18 @@
                   <span class="tchip tchip--current">Current</span>
                   <time class="tl-date" datetime="2026-03"><i class="far fa-calendar-alt" aria-hidden="true"></i> Mar 2026 – Present</time>
                 </div>
-                <h3 class="tl-role">Data Engineer</h3>
+                <h3 class="tl-role">Software Engineer</h3>
                 <div class="tl-company"><span class="co-name">RS Technologies Inc.</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Full-time</span></div>
               </div>
               <ul class="tl-bullets">
-                <li>Designed and deployed <strong>AWS Glue ETL pipelines in Python</strong> processing millions of records per run across production datasets with automated scheduling</li>
-                <li>Reduced pipeline execution time by <strong>~30%</strong> through query plan optimization, partition pruning, and schema redesign</li>
-                <li>Built end-to-end monitoring and automated validation framework that cut production debugging time significantly and improved data quality SLAs</li>
-                <li>Partnered with engineering and analytics teams to define data contracts, resolve schema drift, and maintain pipeline reliability at scale</li>
+                <li>Built and maintained Node.js backend services and internal tooling to automate large-scale workflows, processing millions of records with scheduled AWS job orchestration</li>
+                <li>Improved overall system throughput by around 30% through Node.js code optimisation, query restructuring, and async processing — measured via AWS CloudWatch job duration logs before and after changes</li>
+                <li>Developed React-based internal dashboards for monitoring system health, visualising metrics, and surfacing validation failures to the engineering team</li>
+                <li>Collaborated with cross-functional teams to define API contracts, resolve integration issues, and ship reliable backend services on schedule</li>
               </ul>
               <div class="tl-tech" aria-label="Technologies">
-                <span class="tpill">AWS Glue</span><span class="tpill">Python</span><span class="tpill">SQL</span>
-                <span class="tpill">ETL</span><span class="tpill">AWS S3</span><span class="tpill">Data Modeling</span>
+                <span class="tpill">Node.js</span><span class="tpill">React</span><span class="tpill">JavaScript</span>
+                <span class="tpill">AWS</span><span class="tpill">SQL</span><span class="tpill">REST APIs</span>
               </div>
             </div>
           </article>
@@ -463,17 +433,17 @@
             <div class="tl-card">
               <div class="tl-top">
                 <div class="tl-chips">
-                  <span class="tchip tchip--founder">Founder</span>
+                  <span class="tchip tchip--side">Side Project</span>
                   <time class="tl-date" datetime="2025-09"><i class="far fa-calendar-alt" aria-hidden="true"></i> Sep 2025 – Present</time>
                 </div>
                 <h3 class="tl-role">Founder &amp; Lead Engineer</h3>
-                <div class="tl-company"><span class="co-name">SkyVerge Labs Co.</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Self-employed</span></div>
+                <div class="tl-company"><a href="https://www.skyvergelabs.com/" target="_blank" rel="noopener" class="co-name co-link">SkyVerge Labs Co.</a><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Self-employed</span></div>
               </div>
               <ul class="tl-bullets">
-                <li>Founded a software company to independently ship <strong>multiple apps and products</strong> across domains — SaaS tools, mobile apps, and automation platforms — entirely outside my day job</li>
-                <li>Solo-built and launched <strong>Kitchen Stock</strong> (kitchenstock.co) from zero to production in under 3 months — full-stack React Native + React + Node.js + MongoDB supporting real-time inventory across 100+ SKUs and multi-level BOM dependencies</li>
+                <li>Founded a software company to independently ship multiple apps and products across domains — SaaS tools, mobile apps, and automation platforms — entirely outside my day job</li>
+                <li>Solo-built and launched Kitchen Stock (kitchenstock.co) from zero to production in under 3 months — full-stack React Native + React + Node.js + MongoDB supporting real-time inventory across 100+ SKUs and multi-level BOM dependencies</li>
                 <li>Own the full engineering lifecycle across every project: system design → API architecture → frontend → deployment → user iteration</li>
-                <li>Operate as a one-person engineering org: product decisions, infrastructure, and code — no hand-offs, no waiting</li>
+                <li>Apply the same engineering practices used in team settings — structured Git branching, documented APIs, and architecture decisions made with clear trade-off reasoning</li>
               </ul>
               <div class="tl-tech" aria-label="Technologies">
                 <span class="tpill">Node.js</span><span class="tpill">React</span><span class="tpill">React Native</span>
@@ -493,9 +463,9 @@
                 <div class="tl-company"><span class="co-name">I Giants Inc</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Full-time</span></div>
               </div>
               <ul class="tl-bullets">
-                <li>Built and owned <strong>20+ REST API endpoints</strong> in Node.js/Express.js powering core backend services for a production application with active users</li>
-                <li>Redesigned MongoDB schemas and added compound indexes, reducing average query response time by <strong>~35%</strong> on high-frequency reads</li>
-                <li>Shipped features across <strong>bi-weekly sprint cycles</strong> for 18 months with consistent on-time delivery and minimal regression</li>
+                <li>Built and owned 20+ REST API endpoints in Node.js/Express.js powering core backend services for a production application with active users</li>
+                <li>Redesigned MongoDB schemas and added compound indexes, reducing average query response time by around 35% on high-frequency reads — profiled using .explain() before and after index changes</li>
+                <li>Shipped features across bi-weekly sprint cycles for 18 months with consistent on-time delivery and minimal regression</li>
                 <li>Conducted peer code reviews, introduced API documentation standards, and contributed to team engineering practices</li>
               </ul>
               <div class="tl-tech" aria-label="Technologies">
@@ -510,15 +480,15 @@
             <div class="tl-card">
               <div class="tl-top">
                 <div class="tl-chips">
-                  <span class="tchip tchip--impact">500K+ Users</span>
+                  <span class="tchip tchip--impact">100K+ Downloads</span>
                   <time class="tl-date" datetime="2021-08"><i class="far fa-calendar-alt" aria-hidden="true"></i> Aug 2021 – Jan 2023</time>
                 </div>
                 <h3 class="tl-role">Team Lead — Android &amp; Backend</h3>
-                <div class="tl-company"><span class="co-name">OSOS Pvt Ltd</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Full-time</span></div>
+                <div class="tl-company"><span class="co-name">OSOS Pvt Ltd</span><span class="co-sep" aria-hidden="true">·</span><span class="co-type">Full-time</span><a href="https://play.google.com/store/apps/details?id=com.osos.spaarksapp&hl=en_US" target="_blank" rel="noopener" class="co-app-link"><i class="fab fa-google-play" aria-hidden="true"></i> Spaarks</a></div>
               </div>
               <ul class="tl-bullets">
-                <li>Led a team of <strong>5 engineers</strong> to grow the Android app from <strong>1K to 500K+ Play Store users</strong> in under 18 months — owning sprint planning, code reviews, and the technical roadmap</li>
-                <li>Architected mobile-backend communication layer in Node.js to handle <strong>concurrent requests at scale</strong>, integrating Google Play Services and 8+ third-party APIs</li>
+                <li>Led a team of 5 engineers to grow the Android app from 1K to 100K+ Play Store downloads in under 18 months — owning sprint planning, code reviews, and the technical roadmap</li>
+                <li>Architected mobile-backend communication layer in Node.js to handle concurrent requests at scale, integrating Google Play Services and 8+ third-party APIs</li>
                 <li>Reduced app crash rate through systematic code review culture and pre-release QA checklists, improving Play Store rating over the product lifecycle</li>
                 <li>Promoted from engineer to team lead within the first year based on delivery track record and technical ownership</li>
               </ul>
@@ -594,16 +564,35 @@
             <div class="pcard-inner">
               <div class="pcard-star"><i class="fas fa-star" aria-hidden="true"></i> Featured Project</div>
               <div class="pcard-num" aria-hidden="true">01</div>
-              <h3 class="pcard-title">Kitchen Stock — Inventory Management System</h3>
+              <h3 class="pcard-title">Kitchen Stock — Inventory Management SaaS</h3>
               <p class="pcard-desc">
-                Full-stack inventory management platform for restaurant and kitchen operations.
-                Features SKU-based architecture, multi-level Bill of Materials (BOM) dependencies,
-                dynamic unit conversion, real-time cost calculation, and comprehensive stock tracking.
+                Full-stack production SaaS for restaurant and kitchen operations — built solo from zero to live in under 3 months.
+                SKU-based architecture, multi-level Bill of Materials (BOM) dependencies,
+                dynamic unit conversion, real-time cost calculation, and supplier management.
               </p>
               <div class="pcard-checks">
                 <div class="pcheck"><i class="fas fa-check-circle" aria-hidden="true"></i> SKU-based architecture with BOM</div>
                 <div class="pcheck"><i class="fas fa-check-circle" aria-hidden="true"></i> Dynamic unit conversion engine</div>
                 <div class="pcheck"><i class="fas fa-check-circle" aria-hidden="true"></i> Real-time cost &amp; inventory tracking</div>
+                <div class="pcheck"><i class="fas fa-check-circle" aria-hidden="true"></i> Zero to production in under 3 months</div>
+              </div>
+              <div class="pcard-diagrams">
+                <a href="img/architecture.pdf" target="_blank" rel="noopener" class="pdiagram-card">
+                  <div class="pdiagram-icon"><i class="fas fa-sitemap" aria-hidden="true"></i></div>
+                  <div class="pdiagram-body">
+                    <div class="pdiagram-title">System Architecture</div>
+                    <div class="pdiagram-sub">Node.js · Express · MongoDB · React · React Native</div>
+                  </div>
+                  <i class="fas fa-file-pdf pdiagram-pdf" aria-hidden="true"></i>
+                </a>
+                <a href="img/architecture-data.pdf" target="_blank" rel="noopener" class="pdiagram-card">
+                  <div class="pdiagram-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+                  <div class="pdiagram-body">
+                    <div class="pdiagram-title">Data Model</div>
+                    <div class="pdiagram-sub">MongoDB · 25+ collections · Multi-tenant</div>
+                  </div>
+                  <i class="fas fa-file-pdf pdiagram-pdf" aria-hidden="true"></i>
+                </a>
               </div>
               <div class="pcard-tech">
                 <span class="tpill">Node.js</span><span class="tpill">React</span><span class="tpill">React Native</span>
@@ -616,6 +605,9 @@
                 <a href="https://kitchenstock.co/features" target="_blank" rel="noopener" class="plink">
                   <i class="fas fa-list-check" aria-hidden="true"></i> All Features
                 </a>
+                <a href="https://github.com/Krishna1303" target="_blank" rel="noopener" class="plink">
+                  <i class="fab fa-github" aria-hidden="true"></i> GitHub
+                </a>
               </div>
             </div>
           </div>
@@ -623,18 +615,19 @@
           <div class="pcard reveal-up" style="--d:0.15s">
             <div class="pcard-inner">
               <div class="pcard-num" aria-hidden="true">02</div>
-              <h3 class="pcard-title">Spaarks App</h3>
+              <h3 class="pcard-title">Spaarks — Social Android App</h3>
               <p class="pcard-desc">
-                Scalable production web platform for a social app — built with ReactJS for a
-                cross-functional team. Delivered frontend performance optimizations and DevOps
-                pipeline integrations that improved release velocity and stability.
+                Social discovery Android app published on the Play Store with 100K+ downloads. Led
+                mobile and backend engineering as Team Lead — integrated Google Play Services and
+                8+ third-party APIs, owned the full technical roadmap, and grew the app from 1K
+                to 100K+ downloads in under 18 months.
               </p>
               <div class="pcard-tech">
-                <span class="tpill">React</span><span class="tpill">Node.js</span><span class="tpill">MongoDB</span><span class="tpill">DevOps</span>
+                <span class="tpill">Java</span><span class="tpill">Android SDK</span><span class="tpill">Node.js</span><span class="tpill">Firebase</span><span class="tpill">Google Play</span>
               </div>
               <div class="pcard-links">
-                <a href="https://www.spaarksweb.com/" target="_blank" rel="noopener" class="plink">
-                  <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Site
+                <a href="https://play.google.com/store/apps/details?id=com.osos.spaarksapp&hl=en_US" target="_blank" rel="noopener" class="plink">
+                  <i class="fab fa-google-play" aria-hidden="true"></i> Play Store
                 </a>
               </div>
             </div>
@@ -646,7 +639,7 @@
               <div class="pcard-metric"><span class="pmetric-val">15%</span><span class="pmetric-label">Accuracy Improvement</span></div>
               <h3 class="pcard-title">Big Mart Sales Prediction</h3>
               <p class="pcard-desc">
-                ML model achieving a <strong>15% improvement in forecast accuracy</strong> for
+                ML model achieving a 15% improvement in forecast accuracy for
                 retail sales. Applied feature engineering, outlier removal, and ensemble model
                 tuning on the Big Mart dataset.
               </p>
@@ -694,8 +687,8 @@
       <div class="container">
         <div class="section-header">
           <span class="section-tag reveal-up">Writing</span>
-          <h2 class="section-title reveal-up" style="--d:0.1s">Technical <span class="g-text">Blog</span></h2>
-          <p class="section-sub reveal-up" style="--d:0.15s">Sharing what I learn about systems, infrastructure, and engineering</p>
+          <h2 class="section-title reveal-up" style="--d:0.1s">Technical <span class="g-text">Writing</span></h2>
+          <p class="section-sub reveal-up" style="--d:0.15s">Deep dives on systems, infrastructure, and engineering decisions — more on the way</p>
         </div>
         <div class="blog-grid">
 
@@ -832,7 +825,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <span class="footer-logo">PVSK</span>
-          <p class="footer-line">Venkata Sai Krishna Padarthi &nbsp;·&nbsp; Software Engineer &amp; Founder &nbsp;·&nbsp; Fairfax, VA</p>
+          <p class="footer-line">Venkata Sai Krishna Padarthi &nbsp;·&nbsp; Software Engineer &nbsp;·&nbsp; Fairfax, VA</p>
         </div>
         <div class="footer-social" aria-label="Social media links">
           <a href="https://www.linkedin.com/in/venkata-sai-krishna-padarthi-4067311a7/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
@@ -856,6 +849,6 @@
     <i class="fas fa-chevron-up" aria-hidden="true"></i>
   </button>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js" defer></script>
 </body>
 </html>

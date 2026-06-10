@@ -4,10 +4,10 @@
 
 /* ---- Page Loader ---- */
 window.addEventListener('load', () => {
-  setTimeout(() => {
-    const loader = document.getElementById('page-loader');
-    if (loader) loader.classList.add('loaded');
-  }, 1800);
+  const loader = document.getElementById('page-loader');
+  if (loader) {
+    setTimeout(() => loader.classList.add('loaded'), 600);
+  }
 });
 
 /* ---- Navbar ---- */
@@ -20,7 +20,7 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
   updateActiveLink();
   toggleBackTop();
-});
+}, { passive: true });
 
 navToggle.addEventListener('click', () => {
   const open = navMenu.classList.toggle('open');
@@ -163,7 +163,7 @@ if (statsBar) {
   statsObs.observe(statsBar);
 }
 
-/* ---- Particle System ---- */
+/* ---- Particle System — deferred until idle so it never blocks paint ---- */
 function createParticles() {
   const container = document.getElementById('hero-particles');
   if (!container) return;
@@ -174,24 +174,24 @@ function createParticles() {
     'rgba(6,182,212,0.3)',
     'rgba(167,139,250,0.4)',
   ];
-  const count = window.innerWidth < 768 ? 12 : 24;
+  const count = window.innerWidth < 768 ? 8 : 16;
+  const frag = document.createDocumentFragment();
 
   for (let i = 0; i < count; i++) {
     const dot = document.createElement('div');
     dot.className = 'particle';
     const size = Math.random() * 4 + 2;
-    dot.style.cssText = `
-      width:${size}px;
-      height:${size}px;
-      left:${Math.random() * 100}%;
-      background:${colors[Math.floor(Math.random() * colors.length)]};
-      animation-duration:${Math.random() * 12 + 8}s;
-      animation-delay:${Math.random() * 10}s;
-    `;
-    container.appendChild(dot);
+    dot.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;background:${colors[i%colors.length]};animation-duration:${Math.random()*12+8}s;animation-delay:${Math.random()*10}s;`;
+    frag.appendChild(dot);
   }
+  container.appendChild(frag);
 }
-createParticles();
+
+if ('requestIdleCallback' in window) {
+  requestIdleCallback(createParticles, { timeout: 2000 });
+} else {
+  setTimeout(createParticles, 500);
+}
 
 /* ---- Contact Form ---- */
 const contactForm = document.getElementById('contact-form');

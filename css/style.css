@@ -71,6 +71,17 @@ a  { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 button { cursor: pointer; border: none; background: none; font-family: var(--font); }
 
+/* Global bold fix — font-weight 600 avoids metric jump that creates visual gaps.
+   letter-spacing: 0 prevents inheriting negative tracking from parent headings.
+   font-synthesis: none stops faux-bold rendering artifacts. */
+strong, b {
+  font-weight: 600;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
 .container {
   max-width: var(--max-w);
   margin: 0 auto;
@@ -676,9 +687,8 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 ============================================= */
 .about-grid {
   display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 80px;
-  align-items: start;
+  grid-template-columns: 1fr;
+  max-width: 780px;
 }
 
 .about-img-wrap {
@@ -716,9 +726,10 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 
 .about-pills {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 10px;
   margin-top: 24px;
+  margin-bottom: 4px;
 }
 .apill {
   display: flex;
@@ -1045,6 +1056,7 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 }
 .tchip--current { background: rgba(99,102,241,0.15); color: var(--primary); }
 .tchip--founder { background: rgba(139,92,246,0.15); color: var(--secondary); }
+.tchip--side    { background: rgba(100,116,139,0.15); color: #94a3b8; }
 .tchip--impact  { background: rgba(52,211,153,0.12); color: #34d399; }
 .tl-date {
   display: flex;
@@ -1064,6 +1076,15 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
 .co-name { color: var(--text-2); font-weight: 600; }
 .co-sep  { color: var(--text-3); }
 .co-type { color: var(--text-3); font-size: 0.83rem; }
+a.co-link { text-decoration: none; transition: color 0.2s; }
+a.co-link:hover { color: var(--primary); }
+.co-app-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  margin-left: 4px; font-size: 0.78rem; font-weight: 500;
+  color: var(--primary); text-decoration: none;
+  opacity: 0.85; transition: opacity 0.2s;
+}
+.co-app-link:hover { opacity: 1; }
 
 .tl-bullets {
   list-style: none;
@@ -1326,6 +1347,46 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   transition: color var(--t);
 }
 .plink:hover { color: var(--primary); }
+.plink--arch { color: var(--accent); }
+.plink--arch:hover { color: var(--primary); }
+
+.pcard-diagrams {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 16px 0;
+}
+.pdiagram-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  text-decoration: none;
+  transition: border-color var(--t), background var(--t);
+}
+.pdiagram-card:hover {
+  border-color: var(--primary);
+  background: var(--bg-card-h);
+}
+.pdiagram-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-sm);
+  background: rgba(99,102,241,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.pdiagram-body { flex: 1; min-width: 0; }
+.pdiagram-title { font-size: 0.88rem; font-weight: 600; color: var(--text); }
+.pdiagram-sub   { font-size: 0.76rem; color: var(--text-3); margin-top: 2px; }
+.pdiagram-pdf   { color: #ef4444; font-size: 1rem; flex-shrink: 0; }
 
 /* =============================================
    BLOG
@@ -1658,10 +1719,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
    RESPONSIVE
 ============================================= */
 @media (max-width: 1024px) {
-  .about-grid {
-    grid-template-columns: 350px 1fr;
-    gap: 50px;
-  }
   .bento-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1684,7 +1741,6 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .hstat-sep      { display: none; }
   .hstat          { padding: 0 20px; }
   .about-grid     { grid-template-columns: 1fr; }
-  .about-img-col  { max-width: 300px; margin: 0 auto; }
   .blog-grid      { grid-template-columns: 1fr; }
   .projects-grid  { grid-template-columns: 1fr; }
   .pcard--featured{ grid-column: span 1; }
@@ -1732,6 +1788,40 @@ button { cursor: pointer; border: none; background: none; font-family: var(--fon
   .fab-resume span { display: none; }
   .cinfo-card,
   .cform { padding: 24px; }
+}
+
+/* =============================================
+   PERFORMANCE
+============================================= */
+
+/* Off-screen sections skip layout/paint until scrolled into view */
+.about, .skills, .education, .experience, .projects, .blog, .contact {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 600px;
+}
+
+/* GPU-accelerate only elements that actually animate */
+.code-card,
+.float-chip,
+.about-img-ring,
+.sbar-fill,
+.loader-progress,
+.hero-glow {
+  will-change: transform;
+}
+
+.typed-cursor,
+.badge-pulse,
+.tl-dot--active,
+.avail-dot,
+.crole-dot,
+.logo-dot {
+  will-change: opacity, box-shadow;
+}
+
+/* Prevent invisible icon flicker while Font Awesome loads async */
+.fa, .fas, .fab, .far, .fal, .fad {
+  font-display: swap;
 }
 
 /* =============================================
